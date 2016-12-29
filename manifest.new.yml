@@ -4,8 +4,8 @@ applications:
   buildpack: java_buildpack_offline
   memory: 512M 
   instances: 1
-  host: bus-sg
+  host: bus
   path: ./target/servicebus-0.0.1-SNAPSHOT.jar
   env:
     JAVA_OPTS: "-Djava.security.egd=file:///dev/urandom"
-  services: [contoso-demo-queue]
+  services: [service-registry]
